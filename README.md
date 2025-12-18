@@ -98,7 +98,7 @@ http://127.0.0.1:8000/
 http://127.0.0.1:8000/admin/
 
 ---
-##№ Screenshots
+### Screenshots
 ---
 **Главная страница**
 <img width="1442" height="748" alt="image" src="https://github.com/user-attachments/assets/18fbe071-bd2a-4a82-9ef9-a8634d6c033d" />
@@ -134,7 +134,7 @@ http://127.0.0.1:8000/admin/
 
 ---
 
-##№ Database Schema (ER-диаграмма)
+### Database Schema (ER-диаграмма)
 ---
 
 <img width="4976" height="3184" alt="image_2025-12-18_22-23-23 (1)" src="https://github.com/user-attachments/assets/8468fad0-8b76-44be-b19c-0778f4199500" />
