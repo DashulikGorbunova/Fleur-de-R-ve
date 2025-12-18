@@ -61,33 +61,43 @@
 #### Пошаговая установка
 
 1. **Клонируйте репозиторий и перейдите в папку проекта:**
-
+```
    git clone <repository-url>
    cd flowershop
+```
 
 2. **Создайте и активируйте виртуальное окружение:**
 
-   
+   ```
     Windows   python -m venv venv   venv\Scripts\activate
     Linux/Mac   python3 -m venv venv   source venv/bin/activate
-
+   ```
    
 3. **Установите зависимости:**
    
+```
    pip install -r requirements.txt
+```
    
-4. **Примените миграции:**
+5. **Примените миграции:**
    
+```
    python manage.py migrate
+
+```
+
+7. **Создайте суперпользователя (опционально, для доступа к админ‑панели):**
    
-5. **Создайте суперпользователя (опционально, для доступа к админ‑панели):**
-   
+```
    python manage.py createsuperuser
+```
    
-6. **Запустите сервер разработки:**
+9. **Запустите сервер разработки:**
+```
    python manage.py runserver
+```  
    
-7. **Откройте браузер и перейдите по адресу:**
+11. **Откройте браузер и перейдите по адресу:**
    
 http://127.0.0.1:8000/
 
@@ -260,19 +270,27 @@ flowershop/
 
 1. **Запуск в режиме разработки**
    
+```
 python manage.py runserver
+```
 
 2. **Создание миграций**
 
+```
 python manage.py makemigrations
+```
 
 3. **Применение миграций**
    
+```
 python manage.py migrate
+```
 
 4. **Создание суперпользователя**
-   
+
+```   
 python manage.py createsuperuser
+```
 
 ---
 
