@@ -1,0 +1,3514 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Synaptics Drivers Release Notes</title>
+
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: Calibri,Tahoma, Arial;
+background-color: #fff;
+}
+
+#wrapper {
+width: 1200px;
+margin: 0px auto;
+background-color: #fff;
+}
+
+#header {
+margin: 0;
+padding: 0;
+padding-bottom: 0.5cm;
+padding-top: 0.5cm;
+padding-left: 0.5cm;
+height: 160px;
+text-align: left;
+background-color: #f1f1f1;
+}
+
+#header h1 {
+color: #333;
+margin: 0;
+padding-top: 20px;
+padding-bottom: 5px;
+font-size: 45px;
+letter-spacing: 4px;
+}
+
+#header h2 {
+color: #333;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 5px;
+font-size: 17px;
+letter-spacing: 2px;
+}
+
+#container {
+width: 1200px;
+}
+
+#aside {
+float: left;
+width: 200px;
+display: block;
+}
+
+#aside p {
+padding: 25px;
+padding-left: 10px;
+padding-top: 7px;
+padding-bottom: 7px;
+text-align: justify;
+line-height: 19px;
+font-size: 16px;
+color: #999;
+}
+
+#footer {
+clear: both;
+margin: 0;
+padding: 0;
+height: 50px;
+background-color: #fff;
+}
+
+#footer h3 {
+color: #fff;
+padding: 0;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 14px;
+letter-spacing: 2px;
+text-align: center;
+font-weight: normal;
+}
+
+#footer p {
+font-style: italic;
+font-size: 10px;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+#section {
+float: left;
+width: 1200px;
+display: block;
+}
+
+.xxlargetText {
+font-size: 1.3em;
+}
+
+.issue {
+width: 450px;
+}
+.td {
+width: 100px;
+}
+
+.des {
+width: 70%;
+}
+
+#section #version {
+width: 1200px;
+margin: 0px auto;
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: left;
+background-color: #fff;
+}
+
+#section #version #header {
+height: 10px;
+padding-top: 5px;
+padding-bottom: 15px;
+}
+
+#section #version #footer {
+clear: both;
+height: 20px;
+}
+
+#section #version #header h1 {
+color: #fff;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 5px;
+font-size: 20px;
+letter-spacing: 4px;
+text-align: left;
+text-indent: 10px;
+}
+
+#version p {
+padding: 15px;
+padding-top: 7px;
+padding-bottom: 7px;
+text-align: justify;
+line-height: 19px;
+font-size: 14px;
+}
+
+#version #footer h3 {
+color: #fff;
+margin: 0;
+padding-top: 2px;
+padding-bottom: 2px;
+font-size: 14px;
+letter-spacing: 4px;
+text-align: right;
+font-weight: normal;
+font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+#wrapper, #container {
+width: 500px;
+}
+
+#aside, #section, #section #version {
+float: none;
+width: 100%;
+}
+
+#header {
+height: 90px;
+}
+
+#header h1 {
+font-size: 25px;
+padding-top: 10px;
+padding-bottom: 3px;
+}
+
+#header h2 {
+font-size: 13px;
+padding-top: 10px;
+padding-bottom: 3px;
+}
+
+#section #version #header {
+height: 20px;
+}
+
+#section #version #footer {
+height: 15px;
+}
+
+#section #version #header h1 {
+font-size: 12px;
+padding-top: 5px;
+padding-bottom: 2px;
+}
+
+#version #footer h3 {
+padding: 1px;
+font-size: 11px;
+}
+}
+
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<img src="http://www.synaptics.com/sites/all/themes/synaptics/logo.png" alt="Synaptics">
+<br />
+<br />
+Synaptics Driver Release Notes for Lenovo_Ultranav_HIDMini_UWP
+<br><br>OS: 32-bit and 64-bit Windows 7, Windows 8, Windows 8.1 and Windows 10
+<br>
+Languages Supported:  English, Arabic, Portuguese (Brazil), Croatian, Czech, Danish, French, French Canadian, Finnish, Greek, German, Hungarian, Indonesian, Hebrew, Italian, Japanese, Korean, Spanish (Mexico), Dutch, Norwegian Bokmal, Polish, Portuguese, Romanian, Russian, Swedish, Slovakian, Spanish (Spain), Slovenian, Thai, Turkish, Traditional Chinese, and Simplified Chinese.
+</div>
+
+<div id="container">
+<div id="section">
+<br>
+<!--syna-insert-here-->
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.90
+
+  Date: 01-20-2022</strong></div><br><br>
+<tr>
+<td class="td">
+</td><table border="1" cellpadding="5">  
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-42119<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new AMD family ID (AMD Rembrandt FP7 & FP7r2 APU)   </td>
+<td align="left" valign="top" class="issue">Customer request </td>
+<td align="left" valign="top" class="issue">Add new PNPIDs   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-42125<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Field] Behavior of Synaptics's SynTPEnh.exe  </td>
+<td align="left" valign="top" class="issue">The "SHGetSpecialFolderPath" API get the desktop folder under D drive.
+The "API get incorrect C drive when issue happened.
+The desktop folder is created if it doesn't exist, and then the desktop.ini is also created.  </td>
+<td align="left" valign="top" class="issue">To avoid the desktop folder is created when the "SHGetSpecialFolderPath "API get the incorrect folder path,
+I change the 4th parameter to FALSE to avoid the folder would be created if it doesn't exist.  </td>
+</tr>
+</tbody></table>
+<br> 
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.89
+
+Date: 09-26-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41818<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[TouchPad] Migration to Visual Studio 2019  </td>
+<td align="left" valign="top" class="issue">For Windows 11, we will use vs2019 to build Touch driver.  </td>
+<td align="left" valign="top" class="issue">Use vs2019 to build Touch driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41980<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">preload image show BSOD(0x7f) point to Synapitics touchpad during audit OS  </td>
+<td align="left" valign="top" class="issue">APILoadState will be called before HKLM is created after the system first boots up with new driver installed. It causes Stack over-flow issue.  </td>
+<td align="left" valign="top" class="issue">Create a system thread to call APILoadState  function.
+Stack overflow issue will not happen.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41939<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN2078/LEN2079 for TBG Thorp3 (P15v/T15p Gen3) project  </td>
+<td align="left" valign="top" class="issue">Customer request   </td>
+<td align="left" valign="top" class="issue">Add new PNPIDs   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41988<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_HidMini_UWP] Package acceptance validation error when submit SynUWPCPL_19005.19088.0.0_x64_bundle.appxupload.  </td>
+<td align="left" valign="top" class="issue">MakePri.exe of 22000 is not supported on submission.  </td>
+<td align="left" valign="top" class="issue">Change TargetPlatform to 20348  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.88
+
+Date: 08-16-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41818<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">[TouchPad] Migration to Visual Studio 2019  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41926<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The sensitivity slider cannot be grayed out when the trackpoint is turned off  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Leave setting be configured when disabled by Ext mouse, and not be configured for the rest of disabled situation.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.86
+
+Date: 06-10-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41778<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Please help to verify the scan time in miniport driver  </td>
+<td align="left" valign="top" class="issue">Add support for reading the scan time from firmware
+</td>
+<td align="left" valign="top" class="issue">Read the scan time from firmware instead of CPU time (Default : disable)  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41866<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">KB FAIL but Clickpad PASS @ Resuming from Legacy S3  </td>
+<td align="left" valign="top" class="issue">According to customer's information, 97 command may cause "keyboard  fail" issue.  </td>
+<td align="left" valign="top" class="issue">Remove kbcnotifyconfig setting by customer's request.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.85
+
+Date: 05-24-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41757<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Trackpoint settings cannot adjustable when USB mouse is connected  </td>
+<td align="left" valign="top" class="issue">Touchpad UI would be grayed out when touchpad is disabled
+(BIOS, Windows settings, USB Mouse is connect)  </td>
+<td align="left" valign="top" class="issue">modify for Touchpad UI would be not grayed out when USB mouse is connected  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41787<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">DUA build request: v19.5.19.84 | Lenovo_Ultranav_HIDmini_UWP	  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.84
+
+Date: 04-05-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41734<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Customized TrackPoint settings cannot keep after S0i3 via lid close  </td>
+<td align="left" valign="top" class="issue">No Session change event happens during resume from S0i3 by lid switching and causes TP driver load the default setting.  </td>
+<td align="left" valign="top" class="issue">When this device supports "Revert To PS2" feature and the monitoris turned on, TP driver will try to do "StartDevice".   </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.83
+
+Date: 03-29-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41737<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad/PST no function after resuming from S0i3 - connect BT earphone   </td>
+<td align="left" valign="top" class="issue">To avoid driver send SMBus command after S4/S5.
+I set a flag when DoExit() and then driver doesn't send any SMBus command.
+This flag also is set after unplug external keyboard and then Driver cannot send SMbus command.
+Driver cannot switch mode after resume from S0i3.  </td>
+<td align="left" valign="top" class="issue">I have modified to avoid external keyboard and internal keyboard to change this flag.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.82
+
+Date: 02-25-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41711<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">TouchPad stopped working after resume from S0i3 by fingerprint  </td>
+<td align="left" valign="top" class="issue">When user use the fingerprint to wake system up,
+the unlock notification comes before monitor on notification so that the IOCTL (Load user's settings) blocks the StartDevice process.  </td>
+<td align="left" valign="top" class="issue">Check the IOCTL (Load user's settings) and wait until the StartDevice is finished.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.81
+
+Date: 02-17-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41679<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad / Edge Region Filtering function is unworkable - update  </td>
+<td align="left" valign="top" class="issue">When PTPHID driver send "X+1" PTP packages to SynTP driver, SynTP driver reports "X" PTP packages to PTPHID driver. One PTP package will be delayed to report. When the last PTP package is "finger up", PTPHID driver will miss to report "finger up" package and cause "Edge Region Filtering function" fail.  </td>
+<td align="left" valign="top" class="issue">When finger count is 0, PTPHID driver will use a timer callback to check if PTP queue is empty.
+If PTP queue is not empty, PTPHID driver will send these packages to OS.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41681<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">After enable driver verifier, a BSOD (0x7E) occurs when system enter hibernate.  </td>
+<td align="left" valign="top" class="issue">Driver processes IOCTL_TOUCHPAD_LOADDEFAULTSTATE but it is not finished after D0Exit.
+Driver still retries sending request to SMBus but gets the timeout failed.
+The BSOD is caused by SynTP driver timing out.  </td>
+<td align="left" valign="top" class="issue">Doesn't send SMBus request after D0Exit  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.80
+
+Date: 01-27-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41688<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">right clicking function isn't works at edge filtering area  </td>
+<td align="left" valign="top" class="issue">Currently, TP driver tries to remove "Tip" to filter PTP package.
+</td>
+<td align="left" valign="top" class="issue">TP driver will try to remove "Confidence" to filter PTP package.
+</td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.79
+
+Date: 01-25-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41672<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">TouchPad & TrackPoint Driver will lost when do refresh & reset w/o connect FOLIO KB - overwrite installation  </td>
+<td align="left" valign="top" class="issue">When TP driver is updated to newer driver version(v19.5.19.75), old OEM inf(v19.5.19.73) still exists.
+After PBR, OS can use old SynTPEnhService(v19.5.19.73) and miss the solution of v19.5.19.75.  </td>
+<td align="left" valign="top" class="issue">When TP driver is updated to newer driver version, Service will delete old OEM files.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41664<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Odin2/Thor2 AMD HLK sleep pnp BSOD (error: 0xC2)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41681<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">After enable driver verifier, a BSOD (0x7E) occurs when system enter hibernate.  </td>
+<td align="left" valign="top" class="issue">Driver processes IOCTL_TOUCHPAD_LOADDEFAULTSTATE but it is not finished after D0Exit.
+Driver still retries sending request to SMBus but gets the timeout failed.
+The BSOD is caused by SynTP driver timing out.  </td>
+<td align="left" valign="top" class="issue">Doesn't send SMBus request after D0Exit  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41595<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Trackpoint settings keep adjustable when USB mouse is connected  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.78
+
+Date: 01-14-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41664<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Odin2/Thor2 AMD HLK sleep pnp BSOD (error: 0xC2)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.77
+
+Date: 01-11-2021</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41643<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Internal keybord can not work under OS  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add workaround : clear output buffer for keyboard cannot work  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41646<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad and styk no function few minutes after resume from S0i3  </td>
+<td align="left" valign="top" class="issue">Driver receives the lock notification before monitor on notification when resume from modern standby
+The phenomenons happens when monitor on/off thread is blocked by session change thread.
+</td>
+<td align="left" valign="top" class="issue">1. use the wait lock to avoid that driver processes LoadConfig() before StartDevice().
+2. Add mutex for Revert to PS2 process  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41593<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Support GSKU by one driver package  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.76
+
+Date: 12-17-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41561<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"> The cursor will stuck when moving by trackpoint  </td>
+<td align="left" valign="top" class="issue">We only enable ASF SMB master function based on supported CPU type.  </td>
+<td align="left" valign="top" class="issue">Add support for AMD Cezanne in SMB driver.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41593<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Support GSKU by one driver package  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.75
+
+Date: 11-25-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41548<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">TouchPad & TrackPoint Driver will lost when do refresh & reset w/o connect FOLIO KB  </td>
+<td align="left" valign="top" class="issue">For some condition, TP driver will be removed by SynTPEnhService.exe.  </td>
+<td align="left" valign="top" class="issue">When TP driver is not installed and SynService is installed, does not uninstall TP driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41583<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">can't be waken up by click middle button on touchpad after enter ModS for more than 3mins  </td>
+<td align="left" valign="top" class="issue">Because the default setting of middle button action is 0, TP driver will not send any key code to wake up the system.  </td>
+<td align="left" valign="top" class="issue">When the display is turned off, TP driver will "middle button" key code to wake up the system.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.74
+
+Date: 11-15-2020</strong></div><br><br>
+<tr>
+<td class="td">
+</td><table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41520<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The trackpoint & touchpad has no function for several minutes after disconnect AC and open Lid to resume from Si03  </td>
+<td align="left" valign="top" class="issue">We had schedule threads for Lid close event and revert to PS2 on display off separately. It could lead to mess up of driver state and we could not guarantee the thread execution sequence. Besides, Lid open could wake up the system normally, it's not necessary to have finger on TP to wakeup the system.
+</td>
+<td align="left" valign="top" class="issue">Do not revert to PS2 when display off if already got Lid closed event.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41563<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">after disable TrackPoint, device will not stop immediately when enter to OS  </td>
+<td align="left" valign="top" class="issue">We added delay to load user settings.  </td>
+<td align="left" valign="top" class="issue">Removed delay for load user configuration.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.73
+
+Date: 11-08-2020</strong></div><br><br>
+<tr>
+<td class="td">
+</td><table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41548<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">TouchPad & TrackPoint Driver will lost when do refresh & reset w/o connect FOLIO KB  </td>
+<td align="left" valign="top" class="issue">For some condition, TP driver will be removed by SynTPEnhService.exe.  </td>
+<td align="left" valign="top" class="issue">When TP driver is not installed and SynService is installed, does not uninstall TP driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41576<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"> BSOD 0x9f when system test S4  </td>
+<td align="left" valign="top" class="issue">"WdfRequestSend with WDF_REQUEST_SEND_OPTION_SYNCHRONOUS can only be sent in Passive level."   </td>
+<td align="left" valign="top" class="issue">Add "IRQL level" check and avoid BSOD issue.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41552<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">default edge Region Filtering setting isn't correct  </td>
+<td align="left" valign="top" class="issue">Edge region suppression settings is not correct.  </td>
+<td align="left" valign="top" class="issue">Modify edge region suppression settings  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41554<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad cannot used after install the driver  </td>
+<td align="left" valign="top" class="issue">Lack of new SMBus ID defined  </td>
+<td align="left" valign="top" class="issue">Add new SMBus ID  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41577<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN0419/LEN041A for TBG Raptor2/Blackbird2&Thorp2 (P15v/T15p) project  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Add new PNPIDs  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41565<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">edge filtering palm performance improvement  </td>
+<tr>
+<td>
+HDR-41313<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">cancel default bottom filtering zone area  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.72
+
+Date: 09-24-2020</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41501<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">independent branch and then separate out the appx from driver package  </td>
+<tr>
+<td>
+HDR-41488<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">reduce cursor response time after system resume from S3  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.71
+
+Date: 09-03-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41436<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[TBG] TM-03471-010/020, driver Trail Driver to discard whole overflow packet to avoid cursor jump  </td>
+<td align="left" valign="top" class="issue">When X or Y overflow bit is set, we may use the first byte of new mouse data to generate mouse package.
+Button bit may be set wrongly.  </td>
+<td align="left" valign="top" class="issue">When X or Y overflow bit is set, we will try to clear the incoming data queue.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41392<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Elan Trackpoint unintentional press-to-select with passthru connection  </td>
+<td align="left" valign="top" class="issue">Levono asked to follow the latest spec to disable press-to-select feature.  </td>
+<td align="left" valign="top" class="issue">Disable press-to-select for Lenovo TrackPoint  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41447<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">tp & stick will not load to default setting in the lock screen  </td>
+<td align="left" valign="top" class="issue">Driver did not load config on session changes.  </td>
+<td align="left" valign="top" class="issue">Enabled load configuration on session lock/unlock.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41482<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN041B/LEN041C for TBG Raptor2/Blackbird2 project  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Add PNPIDs LEN041B and LEN041C for Raptor2/Blackbird2 projects.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.70
+
+Date: 08-14-2020</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.69
+
+Date: 08-06-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41424<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">DUA request: add PNPID LEN2073 into 19.5.19.67 for Drift-3 AMD  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41436<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[TBG] TM-03471-010/020, driver Trail Driver to discard whole overflow packet to avoid cursor jump  </td>
+<td align="left" valign="top" class="issue">When X or Y overflow bit is set, we may use the first byte of new mouse data to generate mouse package.
+Button bit may be set wrongly.  </td>
+<td align="left" valign="top" class="issue">When X or Y overflow bit is set, we will try to clear the incoming data queue.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.68
+
+Date: 07-30-2020</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.67
+
+Date: 07-24-2020</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41285<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top">Touchpad has no function about 1~2s after wake up the EUT from MS in Drift2 AMD  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.66
+
+Date: 07-22-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41374<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_ptphid_UWP_Win10] Touchpad / Edge Region Filtering function is unworkable.  </td>
+<td align="left" valign="top" class="issue"> Edge Region Filtering function is not supported in DCHU PTP filter driver.  </td>
+<td align="left" valign="top" class="issue"> Implement Edge Region Filtering function in DCHU PTP filter driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41399<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN0417/LEN0418 for TBG Odin2/Thor2 AMD project  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Add PNPIDs for TBG Odin2/Thor2 AMD projects  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.65
+
+Date: 06-24-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41352<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">DUA request: add new Intel platform "Tiger lake" SMBus ID into 19.5.19.xx branch  </td>
+<td align="left" valign="top" class="issue">New SMB HWID is added into v19.5.19.64.  </td>
+<td align="left" valign="top" class="issue">New SMB HWID is added into v19.5.19.64.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.64
+
+Date: 06-14-2020</strong></div><br><br>
+<tr>
+<td class="td">
+</td><table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41165<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The tapping and slide function still work after clicking the unselected area of touchpad.   </td>
+<td align="left" valign="top" class="issue">Feature changed by Lenovo request.   </td>
+<td align="left" valign="top" class="issue">Ignore finger location for clicking  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41189<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">sometimes touchpad function will lost after wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Failed to switch mode to SMB when wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Ignore load default config when session lock/unlock.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41308<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN0415/LEN0416 for TBG Odin / Thor2 Intel project  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41315<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">middle button function lost after resume from Modern standby / Hibermate  </td>
+<td align="left" valign="top" class="issue">Should load user configuration after resumed from MS.  </td>
+<td align="left" valign="top" class="issue">Delayed load user config.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41320<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN2071/LEN2072 for TBG Drift3/ Ironhide3 Intel project  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41313<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">cancel default bottom filtering zone area  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.63
+
+Date: 06-01-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41275<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">NeverCrash issue   </td>
+<td align="left" valign="top" class="issue">Page fault caused by accessing invalid address.  </td>
+<td align="left" valign="top" class="issue">Add sanity check for memory allocate in driver  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.62
+
+Date: 05-28-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41189<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">sometimes touchpad function will lost after wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Failed to switch mode to SMB when wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Ignore load default config when session lock/unlock.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.61
+
+Date: 05-18-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41025<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Internal keybord can not work under OS   </td>
+<td align="left" valign="top" class="issue">The output buffer of EC is full and EC will not pull down the interrupt pin to notify keyboard driver.  </td>
+<td align="left" valign="top" class="issue">Remove workaround because this issue has been fixed by system EC.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41189<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">sometimes touchpad function will lost after wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Failed to switch mode to SMB when wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Ignore load default config when session lock/unlock.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41271<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Cursor movement is not in sync with trackpoint when display changed to portrait mode  </td>
+<td align="left" valign="top" class="issue">Auto rotation feature not applied  </td>
+<td align="left" valign="top" class="issue">Auto rotation feature applied  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41278<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Unable to scale Edge region Filtering smoothly and touchpad hang up when scaling to least dimensions  </td>
+<td align="left" valign="top" class="issue">We do not set the limitation of dragging the active area. User could possibly  set a very small active area size so that it could cause the whole touchpad is suppressed.  </td>
+<td align="left" valign="top" class="issue">We will set a limitation of user dragging the active area to avoid a very small active area   </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41246<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">DFx support in SMBus driver  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.60
+
+Date: 04-16-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41240<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad and trackpoint cannot move after resume from Si03 with via lid close in DC mode  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.59
+
+Date: 04-07-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41115<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Can't be waked up from ModS via TrackPoint/TouchPad after change from Yoga mode to Clamshell/Layflat mode  </td>
+<td align="left" valign="top" class="issue">When system state is not changed to S0, PM driver will not update the latest state and TP driver will use wrong "Yoga mode" state to disable all TP functions.  </td>
+<td align="left" valign="top" class="issue">When TP driver get Touchpad interrupt or stick interrupt, TP driver will try to get position state from PM driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41207<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[20H1_MSFT_Submission] InfVerif failed with Error Code 1297 - Device driver does not install on any devices, use primitive driver if this is intended.  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41208<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">disable the trackpoint then shutdown the OS, UI setting will be grayed cannot adjustable  </td>
+<td align="left" valign="top" class="issue">The device was grayed in UI because of failed to find device in SynCOM   </td>
+<td align="left" valign="top" class="issue">Revert the changes in SynCOM  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.58
+
+Date: 03-18-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41115<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Can't be waked up from ModS via TrackPoint/TouchPad after change from Yoga mode to Clamshell/Layflat mode  </td>
+<td align="left" valign="top" class="issue">When system state is not changed to S0, PM driver will not update the latest state and TP driver will use wrong "Yoga mode" state to disable all TP functions.  </td>
+<td align="left" valign="top" class="issue">When TP driver get Touchpad interrupt or stick interrupt, TP driver will try to get position state from PM driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41189<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">sometimes touchpad function will lost after wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Failed to switch mode to SMB when wake up from DRIPS mode  </td>
+<td align="left" valign="top" class="issue">Ignore load default config when session lock/unlock.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.57
+
+Date: 03-02-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-41115<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Can't be waked up from ModS via TrackPoint/TouchPad after change from Yoga mode to Clamshell/Layflat mode  </td>
+<td align="left" valign="top" class="issue">When system state is not changed to S0, PM driver will not update the latest state and TP driver will use wrong "Yoga mode" state to disable all TP functions.  </td>
+<td align="left" valign="top" class="issue">When TP driver get Touchpad interrupt or stick interrupt, TP driver will try to get position state from PM driver.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41080<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">remove HWID LEN008F/LEN0090 from TBG driver branches  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.56
+
+Date: 01-07-2020</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40995<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The"Edge Region Filtering"area have no responed when Click ON/OFF Button  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41025<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Internal keybord can not work under OS   </td>
+<td align="left" valign="top" class="issue">The output buffer of EC is full and EC will not pull down the interrupt pin to notify keyboard driver.  </td>
+<td align="left" valign="top" class="issue">TP driver will clean the output buffer of EC and EC can pull down the interrupt pin to notify keyboard driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-41045<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">cannot use touchpad to wake up the system from modern standby mode in AMD platform  </td>
+<td align="left" valign="top" class="issue">AMD claimed that the system does not support SMB host notify to wake up the system.  </td>
+<td align="left" valign="top" class="issue">Revert to PS2 when entered modern standby  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.55
+
+Date: 12-05-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40995<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">The"Edge Region Filtering"area have no responed when Click ON/OFF Button  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-41011<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">create new ID group for CS20 projects  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.54
+
+Date: 11-22-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40984<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad has no function for about 15~20s after disble Trackpoint in BIOS  </td>
+<td align="left" valign="top" class="issue">When stick is GPIO disabled by BIOS, it seems the stick is turned off. So the detection of stick in PS2 mode and SMB mode will failed. And we will always do the stick detection when we checked the pass thru capability no matter it is disabled or not. So it is the failure to make the detection became a log period. So I add code to ping the pass thru device in the beginning of the ps2 stick detection. Once it is not there, we will skip the ps2 detection and also skip the smb stick detection.  </td>
+<td align="left" valign="top" class="issue">When stick is GPIO disabled by BIOS, it seems the stick is turned off. So the detection of stick in PS2 mode and SMB mode will failed. And we will always do the stick detection when we checked the pass thru capability no matter it is disabled or not. So it is the failure to make the detection became a log period. So I add code to ping the pass thru device in the beginning of the ps2 stick detection. Once it is not there, we will skip the ps2 detection and also skip the smb stick detection.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40995<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The"Edge Region Filtering"area have no responed when Click ON/OFF Button  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40976<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Do not enable &#8220;DeleteUserSettingsOnUpgrade&#8221; settings for any UWP or PUWP TP drivers  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.53
+
+Date: 11-14-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40908<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad cursor cannot move after installed driver  </td>
+<td align="left" valign="top" class="issue">PCI\VEN_8086&DEV_06A3&CC_0C05 is new SMB ID.  </td>
+<td align="left" valign="top" class="issue">Add a new SMB ID "PCI\VEN_8086&DEV_06A3&CC_0C05".  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40929<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Additional mouse options link cannot open when disable trackpoint in BIOS  </td>
+<td align="left" valign="top" class="issue">When stick is disabled by GPIO, the stick device will not be created by driver. But for touchpad device, this device is always exist no matter it is disabled by GPIO or not. So this issue will not happen in touchpad. Anyway the function is not related to the existence of device, so it can be called via the synapi instead of syndevice.   </td>
+<td align="left" valign="top" class="issue">We can launch the win32 mouse cpl via synapi instead of syndevice  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40941<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">System can't resume from MS mode by trackpoint  </td>
+<td align="left" valign="top" class="issue">FW failed reporting F03 packets when TP is in long doze mode  </td>
+<td align="left" valign="top" class="issue">Adjust the sensing interval when device is in Doze mode  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40970<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">TrackPoint function can't be kept after multiple repeat UI status settings  </td>
+<td align="left" valign="top" class="issue">It seems we can't call syncom setvalue and persiststate api at the same time.
+</td>
+<td align="left" valign="top" class="issue">we should do the synchronization when we call setvalue and persiststate   </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40853<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">remove the old PNPID from 19.5.19.xx branch  </td>
+<tr>
+<td>
+HDR-40976<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Do not enable &#8220;DeleteUserSettingsOnUpgrade&#8221; settings for any UWP or PUWP TP drivers  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.52
+
+Date: 09-25-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40836<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Lenovo-LBG LCFC, Syna TP driver crash issue reported by MSFT  </td>
+<td align="left" valign="top" class="issue">When "CoCreateInstance" fails, *ppv contains NULL.
+We must avoid to access the NULL point.
+https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance  </td>
+<td align="left" valign="top" class="issue">Add a sanity check to avoid BSOD issue..  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40799<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">PNPID Request: CS20 Padme-3: LEN040F  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40803<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">DUA request: add PNPID LEN0411 & 0410 into 19.5.19.51 for Odin & Thor AMD  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40816<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">UltraNav: Security: Signed Binary Proxy Execution vulnerability (ALIRT: (LEN-29108))  </td>
+<td align="left" valign="top" class="issue">The "SHELLEXEC" switch from SynTPEnh executable could be a security concern.  </td>
+<td align="left" valign="top" class="issue">We remove the "SHELLEXEC" switch from SynTPEnh and validate signature check against the file we plan to execute.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40830<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">UWP UI is updated in old driver will not work.  </td>
+<td align="left" valign="top" class="issue">We doesn't set the minimum driver version supported for the UWP UI.   </td>
+<td align="left" valign="top" class="issue">The the minimum driver version to v19.5.19.48  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40833<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN2065/LEN2066 for TBG Raptor / Blackbird project  </td>
+<td align="left" valign="top" class="issue">Apply new HWID.  </td>
+<td align="left" valign="top" class="issue">Apply new HWID.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40837<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN2069/LEN2070 for TBG Thor-P project  </td>
+<td align="left" valign="top" class="issue">Add PnPID LEN2069, LEN2070 for TBG Thor-P project  </td>
+<td align="left" valign="top" class="issue">Add PnPID LEN2069, LEN2070 for TBG Thor-P project  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40793<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">support modern standby function @ Lenovo UltraNav hidmin UWP  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.51
+
+Date: 08-26-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40604<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] v19.5.19.45 Windows Application Cerfification Test failed  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40741<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Can build SynUWPCPL appx in store using VS2017  </td>
+<td align="left" valign="top" class="issue">The Package.appxmanifest file is invalid for the DirverConstraint item.  </td>
+<td align="left" valign="top" class="issue">We should use the uap5:DriverConstraint instead of DriverConstraint.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40754<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">DUA request: add PNPID LEN2064 into 19.5.19.50 for Drift2 AMD  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40758<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The UWP UI (stick and touchpad) will flip from default to user setting quickly when user leave the lock screen  </td>
+<td align="left" valign="top" class="issue">The driver will load the default setting when entering the screen lock and then reload the user setting after leaving the screen lock. And UI will get the notify from driver and find the change of the settings. So it then reload the UI for the change of the scene.  </td>
+<td align="left" valign="top" class="issue">Add code to monitor if it is entering or leaving the screen lock. If it is entering in screen lock, we do not change the UI.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40793<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">support modern standby function @ Lenovo UltraNav hidmin UWP  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.50
+
+Date: 08-02-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40531<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad and trackpoint cannot usable after image preload  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40726<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN040D/LEN040E for TBG BumbleBee2 project  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Add PNPIDs LEN040D and LEN040E.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40728<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] Synaptics TrackPoint App GUI is blank if we disabled TrackPoint in BIOS  </td>
+<td align="left" valign="top" class="issue">The trackpoint disabled by GPIO will not have a corresponding syn device in our syncom. Thus, we will failed in the first initialization. And it won't have the chance to make the UI loaded.  </td>
+<td align="left" valign="top" class="issue">We should do a little bit different things from the touchpad case. If we do not have the syndevice for the trackpoint for a long while during the initialization, we can take it as tackpoint is disabled by GPIO and then we can load the UI for all control element is gray out.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40627<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Create a fulltrust app for the UWP CPL and they can talk to each other and the fulltrust app can receive driver notify   </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.49
+
+Date: 07-23-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40703<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad UI is empty after first time to launch the app  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40627<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">Create a fulltrust app for the UWP CPL and they can talk to each other and the fulltrust app can receive driver notify   </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.48
+
+Date: 07-15-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40089<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad cannot quickly respond after LID close  </td>
+<td align="left" valign="top" class="issue">After lid close event, FW will not report "finger up" packet to clean current finger status.
+For PTP driver, "Palm" will not be cleaned event until FW reports "finger up" finger packet.  </td>
+<td align="left" valign="top" class="issue">After lid close event, TP driver will send Dribble Packet to clean "palm" state.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40560<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad no function after change Trackpad from disable to enable in BIOS setting  </td>
+<td align="left" valign="top" class="issue">There is no logon screen for the target SKU, thus there is no session change to trigger load state update for the device state change.
+Besides, we failed to enable PTP device state when in HidMini Set feature.
+This is due to Enh service will re-enumerate HidMini device when the "TP disabled by GPIO" registry is changed. However, this will cause the HID pointing device re-constructed and having the GetParent PD  failed since it was only set at device detection.   </td>
+<td align="left" valign="top" class="issue">Refer to the PTP enable/disable state when the HID set feature reporting is updated.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40641<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">"Leave TrackPoint on when a mouse is connected" will not enabled when load the default setting in Lenovo Vantage  </td>
+<td align="left" valign="top" class="issue">We should add UWP Leave TrackPoint on when a mouse is connected support in restore default settings of stick  </td>
+<td align="left" valign="top" class="issue">Add UWP Leave TrackPoint on when a mouse is connected support in restore default settings of stick in Lenovo Vantage  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40688<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Finn-AMD] Lid close/open function check function fail in 19H1 OS  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Update group settings for LEN2056  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40627<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">Create a fulltrust app for the UWP CPL and they can talk to each other and the fulltrust app can receive driver notify   </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.47
+
+Date: 06-12-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40628<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] Observed the SynTPEnhService (v19.5.19.46 Lenovo_Ultranav_Hidmini_UWP) is stopped after the 1st reboot  </td>
+<td align="left" valign="top" class="issue">When we try to install TP driver and SynTPEnhservice is launched after next boot, we will meet the following issue.
+For PS2/SMB device, Software component will be generated after the first boot.
+SynTPEnhservice is launched after the second boot.   </td>
+<td align="left" valign="top" class="issue">When Service software component is installed, SynTPEnhService will be launched directly. If SynTPEnhService is not installed by SynService.inf, it will not need to check Software component  and uninstall TP driver.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.46
+
+Date: 06-06-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40602<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] Synaptics TouchPad related devices are missing after upgrade driver (19.5.19.42 -> 19.5.19.45)  </td>
+<td align="left" valign="top" class="issue">For PS2/SMB device, Software component will be showed after next boot.
+When SynTPEnhservice is launched and Software component is not generated, SynTPEnhService will uninstall TP driver.  </td>
+<td align="left" valign="top" class="issue">For PS2/SMB device, Software component will be showed after next boot.
+SynTPEnhservice is launched after next boot.
+Software component is generated and SynTPEnhService will not uninstall TP driver.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40603<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] TrackPoint still works even if disabled "Leave TrackPoint on when a mouse is connected" in Synaptics PointStick appx GUI  </td>
+<td align="left" valign="top" class="issue">The registry UWPAppSupport under HKLM\CurrentControlSet\Services\SynTPEnhService\Parameters is set as 0, thus the notify of external mouse connecting will not be processed.   </td>
+<td align="left" valign="top" class="issue">Set the registry UWPAppSupport as 1 for UWP App driver.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.45
+
+Date: 05-30-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40417<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Customize Synaptics TouchPad Settings of TouchPad UI will restore default after resume from S3 and S4 via lid close.  </td>
+<td align="left" valign="top" class="issue">The UI reload state before driver restores to user configuration when user log-in.   </td>
+<td align="left" valign="top" class="issue">Delay the UI reload in UI focus change, external device update, remove.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-40572<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">direct write registry setting to fix HDR-40531 @ Drift / Ironhide Intel  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.44
+
+Date: 05-24-2019</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40415<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Trackpoint horizontal scrolling has no function with inactive Excel file  </td>
+<td align="left" valign="top" class="issue">The kernel horizontal wheel is not work for MS Excel   </td>
+<td align="left" valign="top" class="issue">Update settings for horizontal scrolling of MS Excel.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40486<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN0400/LEN0401 for TBG Sideswipe project  </td>
+<td align="left" valign="top" class="issue">Customer requested  </td>
+<td align="left" valign="top" class="issue">Add new PnPIDs  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40487<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad unavailable during the process of uninstalling the Synaptics Ultranav driver  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40540<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Sometimes SynService.inf is not copied to DriverStore.  </td>
+<td align="left" valign="top" class="issue">SynService.inf is not removed, so SynService.inf( the same version) is not copied to driver store.
+SynTPEnhService is not launched.  </td>
+<td align="left" valign="top" class="issue">Before uninstalling SynTPEnhService.exe, we will force to uninstall SynService.inf.
+It makes that SynService.inf( the same version) is copied to driver store when user tries to install the same driver version.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40545<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">cursor cannot movement after change to CML platform  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.43
+
+Date: 03-25-2019</strong></div><br><br>
+<tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.42
+
+Date: 02-24-2019</strong></div><br><br>
+<tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.41
+
+Date: 02-13-2019</strong></div><br><br>
+<tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.40
+
+Date: 01-21-2019</strong></div><br><br>
+<tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.39
+
+Date: 01-04-2019</strong></div><br><br>
+<tr>
+<td class="td">
+</td><tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.38
+
+Date: 12-20-2018</strong></div><br><br>
+<tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.37
+
+Date: 12-06-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40120<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">The Touchpad/Trackpoint lost function after set close lid as Do nothing then close LID during restart.(2/2units;3/3cycles each EUT)   </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.36
+
+Date: 12-04-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40047<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad cannot move after open the lid during Restart the system with LID Closed  </td>
+<td align="left" valign="top" class="issue">ClickPad was disabled by lid close.  </td>
+<td align="left" valign="top" class="issue">Remove lid open/close settings.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.35
+
+Date: 12-02-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-40070<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Trackpoint settings will be available and can be toggle onoff when click Additional mouse options twice or more after disable trackpoint in BIOS  </td>
+<td align="left" valign="top" class="issue"> when trackpoint device is disabled by gpio, we can't find the device in kernel, so the app won't have the device handle. Thus we should check the device handle at first. If it is a unknown value, we should disable all the controls during the app loadng.  </td>
+<td align="left" valign="top" class="issue"> when trackpoint device is disabled by gpio, we can't find the device in kernel, so the app won't have the device handle. Thus we should check the device handle at first. If it is a unknown value, we should disable all the controls during the app loadng.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40083<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad & trackpoint device will not disable in Tablet mode -update  </td>
+<td align="left" valign="top" class="issue">In v19.5.19.34, we changed the way how customer's PM driver notify us the Position State and it only affects TouchPad.  </td>
+<td align="left" valign="top" class="issue">Calling the correct function to update TrackPoint's state also.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40084<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[UWP] Appx name change  </td>
+<td align="left" valign="top" class="issue">Change the UWP touchpad control panel appx display name  </td>
+<td align="left" valign="top" class="issue">Change the UWP touchpad control panel appx display name  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-40089<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad cannot quickly respond after LID close  </td>
+<td align="left" valign="top" class="issue">After lid close event, FW will not report "finger up" packet to clean current finger status.
+For PTP driver, "Palm" will not be cleaned event until FW reports "finger up" finger packet.  </td>
+<td align="left" valign="top" class="issue">After lid close event, TP driver will send Dribble Packet to clean "palm" state.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.34
+
+Date: 11-21-2018</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.33
+
+Date: 11-05-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-39872<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">TPG UWP modern UI requirement in CS19 products  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.32
+
+Date: 10-19-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39915<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">touchpad & trackpoint device will not disable in Tablet mode  </td>
+<td align="left" valign="top" class="issue">Add setting to enable communication with PM driver  </td>
+<td align="left" valign="top" class="issue">Add setting to enable communication with PM driver  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-39872<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">TPG UWP modern UI requirement in CS19 products  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.31
+
+Date: 10-08-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39313<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Fast to switch UI adjustable items then log out / in, all settings will load to default.  </td>
+<td align="left" valign="top" class="issue">We will change our design. We only save the setting when user release the left button. Our previous design will always save setting each time user drag the line to change the settings. It will make driver busy in save settings and driver may save the settings in the middle of dragging.  </td>
+<td align="left" valign="top" class="issue">We will change our design. We only save the setting when user release the left button.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39784<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] The size of text label is not enough (Text Cutoff) on the "Touch (Activation) Threshold" feature of Touchpad and PointStick  </td>
+<td align="left" valign="top" class="issue">The grid width is not large enough for those languages   </td>
+<td align="left" valign="top" class="issue">hange the grid width to a larger value for those languages   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39881<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">UWP touchpad control panel can't be opened.  </td>
+<td align="left" valign="top" class="issue">We didin't set the IDS_SensitivitySettings.ItemWidth for some languages (US KR CH TW JP).  </td>
+<td align="left" valign="top" class="issue">We didin't set the IDS_SensitivitySettings.ItemWidth for some languages (US KR CH TW JP). We should set the value as the default value.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+<tr>
+<td>
+HDR-39441<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">(UWP) National Language support requirement  </td>
+<tr>
+<td>
+HDR-39872<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">TPG UWP modern UI requirement in CS19 products  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.30
+
+Date: 09-06-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39700<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Trackpoint device cannot use  </td>
+<td align="left" valign="top" class="issue">The oninterruptpassive will schedule a thread of chwrmipdport to do the work in OnInterrupt, but there is a mutex in the begining of the thread function.and the read/write PS2 data to the trackpoint will be blocked by the mutex. Thus the initialization of trackpoint will always failed.   </td>
+<td align="left" valign="top" class="issue">The OnInterrupt called in the thread function do not need the protection of the mutex, thus we can move this function called before the mutex.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39726<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN2062 for TBG Drift AMD  </td>
+<td align="left" valign="top" class="issue">add pnpid Len2062  </td>
+<td align="left" valign="top" class="issue">add pnpid Len2062  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38662<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Support URI scheme  </td>
+<tr>
+<td>
+HDR-39441<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">(UWP) National Language support requirement  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.29
+
+Date: 08-21-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+<tr>
+<td>
+HDR-39125<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">freeze the UI panel size   </td>
+<tr>
+<td>
+HDR-39441<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">(UWP) National Language support requirement  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.28
+
+Date: 07-31-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38386<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP_Win10_RS3] Incorrect Driver GUI (It seems like MTP driver GUI)  </td>
+<td align="left" valign="top" class="issue">The TPIoctlCallback is only called for 1 time but don't know why the AP hook of this callback will be ran for twice for the same io, and this will mass up our io queue dispatch and the UI will mass up.   </td>
+<td align="left" valign="top" class="issue">Add a workaround to avoid the second ran of the AP hook of  TPIoctlCallback for the same io.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39526<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">There is a Synaptic error pops up when logout  </td>
+<td align="left" valign="top" class="issue">UWP inc's pnpIDs not applied the old fix 'ChangeToNotShowWarningMsgIfDeviceNotExisted_AddReg'  </td>
+<td align="left" valign="top" class="issue">Apply the registry  'ChangeToNotShowWarningMsgIfDeviceNotExisted_AddReg' for UWP inc's all pnpIDs.   </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.27
+
+Date: 07-25-2018</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.26
+
+Date: 07-23-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39406<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[UWP] Sometimes Touchpad is not detected as precision Touchpad in RS5  </td>
+<td align="left" valign="top" class="issue">In customer's certain platform, sometimes the disable/enable of HidMini device at boot time would success but showing Yellow bang.  </td>
+<td align="left" valign="top" class="issue">Check whether our disabled/enabled HidMini device is ready and associated. If not, retry disable/enable.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.25
+
+Date: 07-19-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39406<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[UWP] Sometimes Touchpad is not detected as precision Touchpad in RS5  </td>
+<td align="left" valign="top" class="issue">In customer's certain platform, sometimes the disable/enable of HidMini device at boot time would success but showing Yellow band.  </td>
+<td align="left" valign="top" class="issue">Adding a 5 seconds delay workaround   </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.24
+
+Date: 07-10-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39294<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add new PNPID LEN0405/LEN0406 for TBG BumbleBee project  </td>
+<td align="left" valign="top" class="issue">Add PnPIDs LEN0405, LEN0406  </td>
+<td align="left" valign="top" class="issue">Add PnPIDs LEN0405, LEN0406  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39388<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"> ECR489245 - PTP test cases failed (Y axis can&#8217;t move to value 0)  </td>
+<td align="left" valign="top" class="issue">We didn't re-enumerate the hidmini device after reboot. So the touchpad size is not correct.  </td>
+<td align="left" valign="top" class="issue">Fix a bug in service so that we can detect this is our fist reboot after installation and we should do the reenumeration.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.23
+
+Date: 06-27-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39245<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP] Synaptics Stick Control Panel Installation Failed  </td>
+<td align="left" valign="top" class="issue">We change the Stick UWP app identity name but we did not change it in the sccd file and also we need to change the identity name in corresponding .can.xml file  </td>
+<td align="left" valign="top" class="issue">Chanage the correct app identity name in sccd file and also we need to change the identity name in corresponding .can.xml file  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.22
+
+Date: 06-25-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39123<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP&PUWP_Win10_RS4] TouchPad works, but touchpad feature is OFF (disable)  </td>
+<td align="left" valign="top" class="issue">We should sync out DisableDevice state with MS PTP status, and should save it in registry. Otherwise it will out of sync after the fist loadConfig  </td>
+<td align="left" valign="top" class="issue">We should sync out DisableDevice state with MS PTP status, and should save it in registry.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39239<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_PUWP] BSOD found during INF driver uninstallation  </td>
+<td align="left" valign="top" class="issue">If the mutex is timeout, we should not releae it.  </td>
+<td align="left" valign="top" class="issue">If the mutex is timeout, we should not releae it.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39245<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_PUWP] Synaptics Stick Control Panel Installation Failed  </td>
+<td align="left" valign="top" class="issue">We change the Stick UWP app identity name but we did not change it in the sccd file  </td>
+<td align="left" valign="top" class="issue">Chanage the correct app identity name in sccd file  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.21
+
+Date: 06-21-2018</strong></div><br><br>
+<tr>
+<td class="td">
+</td><table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HQA-17922<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">App Submission - 19.5.19.17 | Lenovo_Ultranav_HIDMini_UWP  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HQA-17922<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">App Submission - 19.5.19.17 | Lenovo_Ultranav_HIDMini_UWP  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HQA-17922<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">App Submission - 19.5.19.17 | Lenovo_Ultranav_HIDMini_UWP  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.20
+
+Date: 06-18-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39113<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touchpad will work after performing Windows lock, even if disabled touchpad by UI  </td>
+<td align="left" valign="top" class="issue">We don't save the disable state to HKCU but instead it will be saved in HKU.Default. This problem is caused by that service is sending the IOCTL at the same time as SynTPEnh sends the IOCTL to save regsitry.   </td>
+<td align="left" valign="top" class="issue">We should lock the contex before we send the IOCTL to io queue.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-39121<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">"Leave TrackPoint On" will Automatically switch the status  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.19
+
+Date: 06-12-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"> [UWP]Modern UI  </td>
+<td align="left" valign="top" class="issue"> Fix the UWP UI to meet Lenovo TBG Spec </td>
+<td align="left" valign="top" class="issue"> Fix the UWP UI to meet Lenovo TBG Spec </td>
+</tr>
+</tbody></table>
+<br>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.18
+
+Date: 06-07-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38983<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">0x9f BSOD on S3  </td>
+<td align="left" valign="top" class="issue">InitAPIType registery key value is read before registry keys moving to HKLM.  </td>
+<td align="left" valign="top" class="issue">Do not create raw pdo device node for puwp driver.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.17
+
+Date: 05-31-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-39062<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Windu2 AMD-SIT]Do not right-left scroll with trackpoint center button in MS Excel   </td>
+<td align="left" valign="top" class="issue">The kernel horizontal wheel is not work for MS Excel
+The enhcement binary is different from the legacy driver and the settings shuld be changed.  </td>
+<td align="left" valign="top" class="issue">We use apply the enhancement to implement the stick scrolling  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.16
+
+Date: 05-30-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38914<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Scrolling will not stop when scrolling to the folder's bottom by using middle button.  </td>
+<td align="left" valign="top" class="issue">We should use the ehacement to implement the stick scrolling   </td>
+<td align="left" valign="top" class="issue">We should use the ehacement to implement the stick scrolling   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38979<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Leave TrackPoint on when mouse is connected&#8221; option is not grayed out if PointStick is disabled.  </td>
+<td align="left" valign="top" class="issue">We should gray out "disable stick when external mouse is connected" touggle switch when stick is disabled in UI  </td>
+<td align="left" valign="top" class="issue">Gray out "disable stick when external mouse is connected" touggle switch when stick is disabled in UI  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38984<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">2F tapping is not ignored if Edge Motion Filtering is turned off  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38985<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Tapping does not work outside of the adjusted region even if &#8220;Edge Tap Filtering&#8221; is off.  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.15
+
+Date: 05-23-2018</strong></div><br><br>
+<tr>
+<td class="td">
+</td><div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.14
+
+Date: 05-15-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38958<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Stick Can't be disabled again after re-plug-in the external mouse when "leave stick on when a mouse is connected" is turn-off  </td>
+<td align="left" valign="top" class="issue">The enhancement will mess up the external mouse disable/enable status, and it should be only handled by service.  </td>
+<td align="left" valign="top" class="issue">Check UWPAppSupport registry in syntpenhservce system registry key, if it is supported, then enhacement should not handle the external mouse disable/enable stuff.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38960<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Touch Threshold has no function in Touchpad Properties  </td>
+<td align="left" valign="top" class="issue">we should apply the settings of UseSmoothWin2KAccel  </td>
+<td align="left" valign="top" class="issue">we should apply the settings of UseSmoothWin2KAccel  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.13
+
+Date: 05-10-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.12
+
+Date: 05-08-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.11
+
+Date: 05-03-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38848<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"><Padme> Synaptics touchpad APP issue  </td>
+<td align="left" valign="top" class="issue">When we remove the stick pivot item, we will set the pivot select index to the stick one, and it will trigger the Pivot_SelectionChanged callback and load the stick settings. And then we will remove the stick UI, but at this moment, the settings are stay in stick rather than touchpad.   </td>
+<td align="left" valign="top" class="issue">Don't change the pivot select index, and instead we call RemoveAt function to remove the stick pivot and avoid trigger the Pivot_SelectionChanged callback   </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.10
+
+Date: 04-25-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.9
+
+Date: 04-19-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38622<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">ECR477012 - Edge Tap Filtering drag object suddenly dropped when resizing itin a fast operation  </td>
+<td align="left" valign="top" class="issue">In previous UI design, one cursor move out a small distance the adjusting would stop.  </td>
+<td align="left" valign="top" class="issue">Only when button up would cause adjusting stop.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38757<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Middle Button no function after setting &#8220;Stick Middle Button Action&#8221; as Middle Button under PointStick.  </td>
+<td align="left" valign="top" class="issue">We have a registry mask 'GesturesValid' for deciding whether we have the gesture and it should be put under Defaults path because it has the DeviceConfig decoration, other wise it would read the default fffffff and is not correct for this driver.  </td>
+<td align="left" valign="top" class="issue">Change the path for GestureValid.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-37230<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top">[UWP] TrackPoint GUI  </td>
+<tr>
+<td>
+HDR-38466<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.8
+
+Date: 04-05-2018</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.7
+
+Date: 03-30-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38678<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"><Dooku / Jinn> Can't keep driver setttings after upgrade driver to v19.5.19.3 (Previous version: v19.5.19.1)  </td>
+<td align="left" valign="top" class="issue">In uwp driver installation, there is no coInstaller to save the old driver user settings for newer driver.  </td>
+<td align="left" valign="top" class="issue">We will apply service to save the user settings when driver upgrade installation.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.6
+
+Date: 03-26-2018</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.5
+
+Date: 03-22-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38518<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[UWP] Need 2nd reboot to reflect the correct UI in Windows Touchpad UI settings after disabling/enabling Trackpad in BIOS  </td>
+<td align="left" valign="top" class="issue">Our service should check the gpio disable state according to the registry value saved by kernel and if it is changed, service should disable/enable (re-enumerate)hid mini device to make os retrieve our report descriptor so that os can decide if there is ptp or mouse in system. This mechanism is broken and we need to fix it.   </td>
+<td align="left" valign="top" class="issue">Our service should check the gpio disable state according to the registry value saved by kernel and if it is changed, service should disable/enable (re-enumerate)hid mini device to make os retrieve our report descriptor so that os can decide if there is ptp or mouse in system. This mechanism is broken and we need to fix it.   </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.4
+
+Date: 03-21-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38518<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[UWP] Need 2nd reboot to reflect the correct UI in Windows Touchpad UI settings after disabling/enabling Trackpad in BIOS  </td>
+<td align="left" valign="top" class="issue">Our service should check the gpio disable state according to the registry value saved by kernel and if it is changed, service should disable/enable (re-enumerate)hid mini device to make os retrieve our report descriptor so that os can decide if there is ptp or mouse in system. This mechanism is broken and we need to fix it.   </td>
+<td align="left" valign="top" class="issue">Our service should check the gpio disable state according to the registry value saved by kernel and if it is changed, service should disable/enable (re-enumerate)hid mini device to make os retrieve our report descriptor so that os can decide if there is ptp or mouse in system. This mechanism is broken and we need to fix it.   </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38466<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top">[UWP] Modern UI  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.3
+
+Date: 03-16-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38518<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[UWP] Need 2nd reboot to reflect the correct UI in Windows Touchpad UI settings after disabling/enabling Trackpad in BIOS  </td>
+<td align="left" valign="top" class="issue">Our service should check the gpio disable state according to the registry value saved by kernel and if it is changed, service should disable/enable (re-enumerate)hid mini device to make os retrieve our report descriptor so that os can decide if there is ptp or mouse in system. This mechanism is broken and we need to fix it.   </td>
+<td align="left" valign="top" class="issue">Our service should check the gpio disable state according to the registry value saved by kernel and if it is changed, service should disable/enable (re-enumerate)hid mini device to make os retrieve our report descriptor so that os can decide if there is ptp or mouse in system. This mechanism is broken and we need to fix it.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38594<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_PUWP_Win10 RS3] Found SynTPCpl.dll and SynTPHelper.exe in C:\Windows\System32 after uninstalled driver and appx  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38599<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">ECR476774  [Finn-AMD][FVT]The Trackpoint will has no function via set the 'Touch Threshold' to level 9 or 10 on TouchPad Properties App(FR:3/3 EUT,2/2 trials);  </td>
+<td align="left" valign="top" class="issue">We should get the mas value of touch stick sensitivity slider from kernel insteand of hard coding.  </td>
+<td align="left" valign="top" class="issue">We should get the mas value of touch stick sensitivity slider from kernel insteand of hard coding.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38600<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">no description or icon in the live tiles  </td>
+<td align="left" valign="top" class="issue">The 150x150 scale 200 png file is given as an empty icon.  </td>
+<td align="left" valign="top" class="issue">Add a correct icon file of 150x150 scale 200 png file   </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.2
+
+Date: 03-09-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38457<font color="green">  &checkmark;</font><br>(ECR473195)  </td>
+<td align="left" valign="top">[UWP] Lenovo Settings interface is not working on DCH driver  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19.1
+
+Date: 03-05-2018</strong></div><br><br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-38457<font color="green">  &checkmark;</font><br>(ECR473195)  </td>
+<td align="left" valign="top">[UWP] Lenovo Settings interface is not working on DCH driver  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.19
+
+Date: 02-15-2018</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.18
+
+Date: 02-09-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38386<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP_Win10_RS3] Incorrect Driver GUI (It seems like MTP driver GUI)  </td>
+<td align="left" valign="top" class="issue">The TPIoctlCallback is only called for 1 time but don't know why the AP hook of this callback will be ran for twice for the same io, and this will mass up our io queue dispatch and the UI will mass up.   </td>
+<td align="left" valign="top" class="issue">Add a workaround to avoid the second ran of the AP hook of  TPIoctlCallback for the same io.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38418<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP_Win10_RS3] Cannot keep the driver setting of 'Press to Select' on Fast side  </td>
+<td align="left" valign="top" class="issue">The total numbers of ticks of  sliders of "press to select" and "touch threshold" are incorrect.  </td>
+<td align="left" valign="top" class="issue">The number of ticks of slider "press to select" should be 8 and the number of ticks of slider "touch threshold" should be 10.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38429<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_Hidmini_UWP_Win10_RS3] TouchPad still works even if disable TrackPad in BIOS  </td>
+<td align="left" valign="top" class="issue">We should use the disable status tpioctl to get the over all disable state. The original disable device tpioctl is only disable state for api disable, we don't know if it is disabled by BIOS  </td>
+<td align="left" valign="top" class="issue">We should use the disable status tpioctl to get the over all disable state. The original disable device tpioctl is only disable state for api disable, we don't know if it is disabled by BIOS  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.17
+
+Date: 02-02-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38381<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Add Lenovo TBG Padme (LEN0099) into UWP driver ; v19.5.16.x  </td>
+<td align="left" valign="top" class="issue">Add PnPID LEN0099  </td>
+<td align="left" valign="top" class="issue">Add PnPID LEN0099 into inf file  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.16
+
+Date: 01-27-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-38353<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Update copyright to 2018  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.15
+
+Date: 01-19-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36379<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">Design UWP based PTP filter control panel for Lenovo   </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38301<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">UWP driver Edge Tap Filter can't be turned off  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.14
+
+Date: 01-12-2018</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.13
+
+Date: 01-07-2018</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-37997<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Secure SynTPAPI (plugin API) shared memory  </td>
+<td align="left" valign="top" class="issue">The SYNTPAPI library created shared memory with default security descriptor which is not secure.  </td>
+<td align="left" valign="top" class="issue">Changed the library to set shared memory security descriptor to deny unauthorized access.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-38088<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">v19.5.10.x: When UI is not installed, click tray icon, show mouse property page.  </td>
+<td align="left" valign="top" class="issue">Not check if Appx has been installed  </td>
+<td align="left" valign="top" class="issue">Check if Appx has been installed before opening UI  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-37925<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue"><Lenovo_LBG>  [V/E] GML SynapticsTouch Pad can not workable at RUNIN   </td>
+<td align="left" valign="top" class="issue">Sometimes H2C read data will be delayed to cause DATA mixed  </td>
+<td align="left" valign="top" class="issue">FW changes read length from 16 to 64 and driver change read length of F11_2D_Ctrl from 64 to 60 as there's 4bytes header  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.12
+
+Date: 12-08-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.11
+
+Date: 12-01-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.10
+
+Date: 11-22-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.9
+
+Date: 11-17-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.8
+
+Date: 11-10-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.7
+
+Date: 11-03-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-37490<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_HIdmini_UWP, Win10 RS2] Middle button suppresses L/R button  </td>
+<td align="left" valign="top" class="issue">In the cospointingdevice we will directly return to avoid cursor movement when the trackponint middle button scroll bit is set. So if there is L/R button in that packet, it can't be sent to OS.   </td>
+<td align="left" valign="top" class="issue">Instead of return, we should set the suppress motion bit to avoid cursor motion.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.6
+
+Date: 10-30-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35652<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Siemens] Copyright year does not upgrade to 2017  </td>
+<td align="left" valign="top" class="issue">New year 2017  </td>
+<td align="left" valign="top" class="issue">Update copyright to year 2017  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36798<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">SynaTPenhance still in Task manager/service  </td>
+<td align="left" valign="top" class="issue">Service process is killed before service process finishes remove.  </td>
+<td align="left" valign="top" class="issue">Removed killing service process code because the process is killed automatically when service is removed.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36860<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Some controls are not working properly on Styk Page  </td>
+<td align="left" valign="top" class="issue">PTP status flag is used to update controls of Styk control panel.  </td>
+<td align="left" valign="top" class="issue">Only applied PTP status to TouchPad control panel.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-37052<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">please remove debug registry in v19.3.31.13_HPConsumer, v19.3.31.x branch  and trunk  </td>
+<td align="left" valign="top" class="issue">Customer request  </td>
+<td align="left" valign="top" class="issue">Remove key stroke log.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36379<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">Design UWP based PTP filter control panel for Lenovo   </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.5
+
+Date: 10-20-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.4
+
+Date: 10-13-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36379<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">Design UWP based PTP filter control panel for Lenovo   </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-37493<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Lenovo_Ultranav_HIdmini_UWP, Win10 RS2] 3F and 4F Flick Up/Down does not work  </td>
+<td align="left" valign="top" class="issue">The kernel gesture is not turned off. It will disturbe the behavior of ptp.  </td>
+<td align="left" valign="top" class="issue">Turn off our mtp kernel gesture  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.3
+
+Date: 10-06-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.2
+
+Date: 09-29-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.1
+
+Date: 09-22-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.5.0
+
+Date: 09-15-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36180<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">Implement gestures engine in kernel  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.4.37
+
+Date: 09-08-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36379<font color="orange">  &orarr;</font>  </td>
+<td align="left" valign="top" class="issue">Design UWP based PTP filter control panel for Lenovo   </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.4.36
+
+Date: 09-01-2017</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+
+<br>
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+<h3> </h3>
+<p>&copy; 2013-2018 Synaptics, Inc. All rights reserved</p>
+</div>
+</div>
+</body>
+</html>

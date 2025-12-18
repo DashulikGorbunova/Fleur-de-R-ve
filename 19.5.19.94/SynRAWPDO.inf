@@ -1,0 +1,33 @@
+;----------------------------------------------------------------------------
+
+[Version]
+Signature="$Windows NT$"
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%Provider%
+CatalogFile=SynTP.cat
+DriverVer=09/30/2022, 19.5.19.94
+
+;----------------------------------------------------------------------------
+; Manufacturer Sections
+;----------------------------------------------------------------------------
+
+[Manufacturer]
+%SynMfg% = SynMfg, NTamd64 ; (Standard types)
+
+[SynMfg.NTamd64]
+%SYNTP_RAW.DeviceDesc%=NODRV,SynTP_RAWPDO
+
+[NODRV]
+
+[NODRV.Services]
+;
+; this is blank to just allow the install to succeed
+;
+AddService = , 0x00000002   ; null service install
+
+[Strings]
+Publisher = "Synaptics Incorporated"
+Provider = "Synaptics"
+SynMfg = "Synaptics"
+SYNTP_RAW.DeviceDesc = "Synaptics RAW PDO Device"
