@@ -153,6 +153,8 @@ http://127.0.0.1:8000/admin/
 
 <img width="4976" height="3184" alt="image_2025-12-18_22-23-23 (1)" src="https://github.com/user-attachments/assets/8468fad0-8b76-44be-b19c-0778f4199500" />
 
+Подробно диаграмму можно изучить docs/diagrams.png
+
 ### Описание моделей для твоего проекта
 ---
 
@@ -171,6 +173,8 @@ http://127.0.0.1:8000/admin/
 ---
 
 <img width="878" height="673" alt="image" src="https://github.com/user-attachments/assets/918084d0-6edf-42f2-bc0c-e4070454328e" />
+
+Посмотреть подробно можно здесь 
 
 ### Компоненты системы 
 ---
