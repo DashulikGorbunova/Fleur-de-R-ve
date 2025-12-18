@@ -153,7 +153,7 @@ http://127.0.0.1:8000/admin/
 
 <img width="4976" height="3184" alt="image_2025-12-18_22-23-23 (1)" src="https://github.com/user-attachments/assets/8468fad0-8b76-44be-b19c-0778f4199500" />
 
-Подробно диаграмму можно изучить 
+Подробно диаграмму можно изучить (https://github.com/DashulikGorbunova/Fleur-de-R-ve/blob/main/docs/diagrams.png)
 ```
 docs/diagrams.png
 ```
