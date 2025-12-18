@@ -68,8 +68,8 @@
 2. **Создайте и активируйте виртуальное окружение:**
 
    
-   # Windows   python -m venv venv   venv\Scripts\activate
-   # Linux/Mac   python3 -m venv venv   source venv/bin/activate
+    Windows   python -m venv venv   venv\Scripts\activate
+    Linux/Mac   python3 -m venv venv   source venv/bin/activate
 
    
 3. **Установите зависимости:**
@@ -118,18 +118,22 @@ http://127.0.0.1:8000/admin/
 
 **Страница отзывов**
 <img width="852" height="529" alt="image" src="https://github.com/user-attachments/assets/971f0ff2-8d01-4170-9c3c-33279dabe8b7" />
+
 Страница с отзывами, отсавить свой отзыв
 
 **Страница авторске букеты**
 <img width="1549" height="717" alt="image" src="https://github.com/user-attachments/assets/ffbd9041-0705-414f-afdf-56fb7974a644" />
+
 Страница для создания своего букета
 
 **Страница для входа**
 <img width="507" height="543" alt="image" src="https://github.com/user-attachments/assets/e19131c8-445c-4486-a150-5a7d5cc1ae66" />
+
 Форма авторизации
 
 **Страница регистрации**
 <img width="492" height="673" alt="image" src="https://github.com/user-attachments/assets/ba75be3b-8a72-4e4f-87e9-12780a374374" />
+
 Форма регистрации нового пользователя
 
 ---
@@ -183,7 +187,7 @@ http://127.0.0.1:8000/admin/
 ---
 ### Project Structure
 ---
-
+```
 flowershop/
 ├── flowershop/                 # Конфигурация Django-проекта
 │   ├── __init__.py
@@ -248,7 +252,7 @@ flowershop/
 ├── manage.py                  # Скрипт управления Django-проектом
 ├── create_sample_data.py      # Скрипт для заполнения БД тестовыми данными (если используется)
 └── (опционально) README.md    # Описание проекта и инструкции по запуску
-
+```
 ---
 
 ### Development
